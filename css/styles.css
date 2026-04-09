@@ -1,30 +1,38 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #0f172a;
-  color: #e2e8f0;
+  background: #132a13;
+  color: #ecf39e;
 }
 
+/* NAV */
 nav {
   display: flex;
   justify-content: center;
   gap: 20px;
-  background: #020617;
+  background: #31572c;
   padding: 15px;
 }
 
 nav a {
-  color: #7dd3fc;
+  color: #ecf39e;
   cursor: pointer;
   font-weight: bold;
+  transition: color 0.2s ease;
 }
 
+nav a:hover {
+  color: #90a955;
+}
+
+/* HEADER */
 header {
   text-align: center;
   padding: 60px 20px;
-  background: #020617;
+  background: #31572c;
 }
 
+/* SECTIONS */
 section {
   max-width: 900px;
   margin: auto;
@@ -36,35 +44,44 @@ section.active {
   display: block;
 }
 
+/* HEADINGS */
 h2 {
-  border-bottom: 2px solid #334155;
+  border-bottom: 2px solid #4f772d;
   padding-bottom: 10px;
 }
 
+/* PROJECT CARDS */
 .project {
   margin-bottom: 30px;
   padding: 20px;
-  background: #1e293b;
+  background: #31572c;
   border-radius: 10px;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .project:hover {
   transform: translateY(-5px);
+  background: #4f772d;
 }
 
+/* PROJECT LINKS */
 .project a {
   display: inline-block;
+  color: #ecf39e;
+  text-decoration: none;
+  margin-top: 10px;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .project a:hover {
   transform: translateY(-3px);
-  color: #bfdbfe; /* even lighter on hover */
+  color: #90a955;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  color: #64748b;
+  color: #90a955;
+  background: #132a13;
 }

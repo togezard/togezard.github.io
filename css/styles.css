@@ -64,8 +64,8 @@ h2 {
   background: #4f772d;
 }
 
-/* PROJECT LINKS */
-.project a {
+/* LINKS */
+.a {
   display: inline-block;
   color: #ecf39e;
   text-decoration: none;
@@ -73,7 +73,7 @@ h2 {
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.project a:hover {
+.a:hover {
   transform: translateY(-3px);
   color: #90a955;
 }

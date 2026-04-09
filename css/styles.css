@@ -53,6 +53,16 @@ h2 {
   transform: translateY(-5px);
 }
 
+.project a {
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.project a:hover {
+  transform: translateY(-3px);
+  color: #bfdbfe; /* even lighter on hover */
+}
+
 footer {
   text-align: center;
   padding: 20px;

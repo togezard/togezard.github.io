@@ -1,106 +1,39 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Sebastian Galinski | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #0f172a;
-      color: #e2e8f0;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background: #020617;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      color: #94a3b8;
-      margin-top: 10px;
-    }
-
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    h2 {
-      border-bottom: 2px solid #334155;
-      padding-bottom: 10px;
-    }
-
-    .project {
-      margin-bottom: 30px;
-      padding: 20px;
-      background: #1e293b;
-      border-radius: 10px;
-      transition: transform 0.2s ease;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-    }
-
-    .project h3 {
-      margin-top: 0;
-    }
-
-    .project p {
-      color: #cbd5f5;
-    }
-
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #64748b;
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+
+<nav>
+  <a onclick="showTab('projects')">Projects</a>
+  <a onclick="showTab('about')">About Me</a>
+</nav>
 
 <header>
   <h1>Sebastian Galinski</h1>
   <p>Media Technology Engineering Student | Developer | Problem Solver</p>
 </header>
 
-<section>
+<section id="projects" class="active">
   <h2>Projects</h2>
 
   <div class="project">
     <h3>Waste Classification (Machine Learning)</h3>
     <p>
         A machine learning project focused on classifying real-world waste data into different categories.
-        Developed in a team of four, with a focus on building and evaluating a Random Forest classifier, including performance analysis and model validation.
     </p>
     <a href="https://github.com/mehmetkucukler/ml-projekt-24" target="_blank">View Repository →</a>
   </div>
 
   <div class="project">
-    <h3>COUNTRYGUESSR: A Geography-based web game</h3>
+    <h3>COUNTRYGUESSR</h3>
     <p>
-        An interactive browser-based game designed to test and improve users’ geographical knowledge.
-        Built in a team of three, with responsibility for maintaining a Model-View-Presenter (MVP) architecture and improving usability through features such as smarter sorting based on relevant letters.
+        A browser-based geography game built with MVP architecture.
     </p>
     <a href="https://gits-15.sys.kth.se/iprog-students/endler-maim-nfraheem-sebgal-HT25-Project" target="_blank">View Repository →</a>
   </div>
@@ -108,20 +41,21 @@
   <div class="project">
     <h3>Caustics Simulation</h3>
     <p>
-        A computer graphics project simulating caustics, the light patterns formed by reflection and refraction.
-        Developed in a team of two, with a focus on evaluating the accuracy and performance of the simulation model.
+        A computer graphics project simulating light patterns.
     </p>
-    <a href="https://togezard.github.io/DD1354-project/" target="_blank">View the Project Blog →</a>
+    <a href="https://togezard.github.io/DD1354-project/" target="_blank">Project Blog →</a><br>
     <a href="https://github.com/togezard/DD1354-project" target="_blank">View Repository →</a>
   </div>
-
 </section>
 
-<section>
+<section id="about">
   <h2>About Me</h2>
   <p>
     I'm a student interested in machine learning, computer graphics, and interactive systems.
-    I enjoy building projects that combine theory with practical applications.
+  </p>
+
+  <p>
+    <a href="www.linkedin.com/in/sebastian-galinski" target="_blank">My LinkedIn Profile</a>
   </p>
 </section>
 
@@ -129,5 +63,6 @@
   <p>© 2026 Sebastian Galinski</p>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>

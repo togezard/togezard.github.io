@@ -23,6 +23,7 @@ nav a {
 
 nav a:hover {
   color: #90a955;
+  transform: none; /* prevent floating in navbar */
 }
 
 /* HEADER */
@@ -64,18 +65,19 @@ h2 {
   background: #4f772d;
 }
 
-/* LINKS */
-.a {
+/* GLOBAL LINKS */
+a {
   display: inline-block;
   color: #ecf39e;
   text-decoration: none;
   margin-top: 10px;
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.a:hover {
+a:hover {
   transform: translateY(-3px);
-  color: #90a955;
+  color: #b5e48c;
+  text-shadow: 0 0 6px rgba(181, 228, 140, 0.6);
 }
 
 /* FOOTER */
